@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<?php
-declare(strict_types=1);
-
-header('Location: accueil.php', true, 302);
-exit;
-=======
 
 <?php
 
@@ -303,4 +296,3 @@ if ($mode != 'connexion' && $mode != 'inscription') {
 
 </body>
 </html>
->>>>>>> 56f6aa8 (inscription)
