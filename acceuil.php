@@ -13,7 +13,7 @@
     <li><a class="on" href="acceuil.php">Accueil</a></li>
     <li><a href="stages.php">Stages</a></li>
     <li><a href="offres.php">Alternances</a></li>
-    <li><a href="jobs_etudiants.php">Jobs étudiants</a></li>
+    <li><a href="jobs.php">Jobs étudiants</a></li>
   </ul>
   <div class="auth" style="display:flex;gap:12px">
     <a class="btn" href="connexion.php">Connexion</a>
