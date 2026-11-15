@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon profil | FAST INTERN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="fi-app">
+  <header class="fi-header"><a class="fi-logo text-decoration-none text-dark" href="profil.html"><span>FAST</span> INTERN</a><nav class="fi-topnav"><a href="#">Accueil</a><a href="#">Stages</a><a href="#">Alternances</a><a href="#">Jobs étudiants</a></nav><div class="fi-user">
+<span class="fi-user-icon">♙</span><span>Stecy Maria</span>
+</div></header>
+  <div class="fi-layout">
+    <aside class="fi-sidebar"><a class="fi-side-link" href="dashboard.php">Tableau de bord</a><a class="fi-side-link" href="offres.php">Rechercher une offre</a><a class="fi-side-link" href="candidature.html">Mes candidatures</a><a class="fi-side-link" href="offres.php">Offres sauvegardées</a><a class="fi-side-link active" href="profil.html">♟   Mon profil</a><a class="fi-side-link" href="#">Paramètres</a><button class="fi-logout" type="button">Déconnexion</button></aside>
+    <main class="fi-main"><div class="fi-kicker">10 - Mon profil</div>
+<h1 class="fi-title">Mon profil</h1>
+<p class="fi-subtitle">Gérez vos informations pour trouver des opportunités adaptées à votre parcours.</p>
+      <section class="fi-card fi-profile-summary"><div class="fi-avatar">♙</div>
+<div>
+<div class="fi-name">Stecy Maria</div>
+<div class="fi-role">Étudiante en informatique</div>
+<div class="fi-meta">
+<span>🎓   Bachelor Informatique<br>      ECE Paris</span><span>◎   Paris, France</span>
+</div>
+</div></section>
+      <div class="fi-columns">
+<div>
+<section class="fi-card"><div class="fi-field">
+<label for="fullName">Nom complet</label><input id="fullName" value="Stecy Maria" readonly>
+</div>
+<div class="fi-field">
+<label for="email">Adresse e-mail</label><input id="email" value="stecy@example.com" readonly>
+</div>
+<div class="fi-field">
+<label for="phone">Téléphone</label><input id="phone" value="+33 6 XX XX XX XX" readonly>
+</div>
+<div class="fi-field">
+<label for="location">Localisation</label><input id="location" value="Paris, France" readonly>
+</div></section>
+      <section class="fi-card"><h2 class="fi-section-title">▣   Mon CV</h2>
+<div class="fi-cv">
+<span class="fi-cv-icon">▤</span><div>
+<strong>CV_stecy.pdf</strong><small>Document PDF · 2,4 Mo</small>
+</div>
+</div></section>
+</div>
+      <section class="fi-card"><h2 class="fi-section-title">🎓   Formation et compétences</h2>
+<div class="fi-field">
+<label for="education">Formation</label><input id="education" value="Bachelor Informatique" readonly><small class="text-secondary d-block mt-1">ECE Paris · 2025 - 2028</small>
+</div>
+<div class="fi-field mt-3">
+<label>Compétences</label><div class="fi-tags">
+<span class="fi-tag">Python</span><span class="fi-tag">JavaScript</span><span class="fi-tag">HTML / CSS</span><span class="fi-tag">SQL</span><span class="fi-tag">Linux</span><span class="fi-tag">Réseaux</span>
+</div>
+</div></section>
+</div>
+      <button class="fi-primary" id="editButton" type="button">✎   Modifier mon profil</button>
+    </main>
+  </div>
+</div>
+<div class="fi-toast" id="toast" role="status">Profil enregistré</div>
+<script>
+const editButton=document.getElementById('editButton');let editing=false;
+editButton.addEventListener('click',()=>{editing=!editing;document.querySelector('.fi-main').classList.toggle('fi-editing',editing);document.querySelectorAll('.fi-main input').forEach(input=>input.readOnly=!editing);editButton.textContent=editing?'✓  Enregistrer les modifications':'✎  Modifier mon profil';if(!editing){const toast=document.getElementById('toast');toast.style.display='block';setTimeout(()=>toast.style.display='none',2200)}});
+</script>
+</body>
+</html>
