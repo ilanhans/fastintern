@@ -9,11 +9,11 @@
 </head>
 <body>
 <div class="fi-app">
-  <header class="fi-header"><a class="fi-logo text-decoration-none text-dark" href="profil.html"><span>FAST</span> INTERN</a><nav class="fi-topnav"><a href="#">Accueil</a><a href="#">Stages</a><a href="#">Alternances</a><a href="#">Jobs étudiants</a></nav><div class="fi-user">
+  <header class="fi-header"><a class="fi-logo text-decoration-none text-dark" href="profil.php"><span>FAST</span> INTERN</a><nav class="fi-topnav"><a href="#">Accueil</a><a href="#">Stages</a><a href="#">Alternances</a><a href="jobs.php">Jobs étudiants</a></nav><div class="fi-user">
 <span class="fi-user-icon">♙</span><span>Stecy Maria</span>
 </div></header>
   <div class="fi-layout">
-    <aside class="fi-sidebar"><a class="fi-side-link" href="#">Tableau de bord</a><a class="fi-side-link" href="#">Rechercher une offre</a><a class="fi-side-link active" href="candidature.html">♟   Mes candidatures</a><a class="fi-side-link" href="#">Offres sauvegardées</a><a class="fi-side-link" href="profil.html">Mon profil</a><a class="fi-side-link" href="#">Paramètres</a><button class="fi-logout" type="button">Déconnexion</button></aside>
+    <aside class="fi-sidebar"><a class="fi-side-link" href="dashboard.php">Tableau de bord</a><a class="fi-side-link" href="offres.php">Rechercher une offre</a><a class="fi-side-link active" href="candidature.php">♟   Mes candidatures</a><a class="fi-side-link" href="offres.php">Offres sauvegardées</a><a class="fi-side-link" href="profil.php">Mon profil</a><a class="fi-side-link" href="#">Paramètres</a><button class="fi-logout" type="button">Déconnexion</button></aside>
     <main class="fi-main"><div class="fi-kicker">09 - Mes candidatures</div>
 <h1 class="fi-title">Mes candidatures</h1>
 <p class="fi-subtitle">Retrouvez et suivez l'évolution de vos candidatures.</p>

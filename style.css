@@ -1,4 +1,388 @@
 :root {
+  --fi-purple: #7028ff;
+  --fi-light: #eee5ff;
+  --fi-ink: #24232a;
+  --fi-muted: #7f808d;
+  --fi-border: #dedee4;
+  --fi-bg: #f7f7f8
+}
+* {
+  box-sizing: border-box
+}
+body {
+  margin: 0;
+  background: var(--fi-bg);
+  font-family: Arial,Helvetica,sans-serif;
+  color: var(--fi-ink);
+  font-size: 14px
+}
+.fi-app {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+  background: #fff
+}
+.fi-header {
+  height: 78px;
+  padding: 0 42px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 48px
+}
+.fi-logo {
+  font-size: 22px;
+  font-weight: 800;
+  white-space: nowrap
+}
+.fi-logo span {
+  color: var(--fi-purple)
+}
+.fi-topnav {
+  display: flex;
+  gap: 30px;
+  margin: auto
+}
+.fi-topnav a {
+  color: #25242b;
+  text-decoration: none;
+  font-size: 14px
+}
+.fi-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap
+}
+.fi-user-icon,.fi-avatar {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--fi-light);
+  color: #7040b5
+}
+.fi-user-icon {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 19px
+}
+.fi-layout {
+  display: grid;
+  grid-template-columns: 270px minmax(0,1fr);
+  min-height: calc(100vh - 78px)
+}
+.fi-sidebar {
+  margin: 0 0 32px 0;
+  padding: 28px 22px 22px;
+  background: var(--fi-light);
+  border: 1px solid #d9c9f5;
+  display: flex;
+  flex-direction: column;
+  gap: 6px
+}
+.fi-side-link {
+  padding: 12px 14px;
+  color: #626173;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 13px
+}
+.fi-side-link.active {
+  background: #e6d9ff;
+  color: #25232b;
+  border: 1px solid #d6c4f6;
+  font-weight: 700
+}
+.fi-logout {
+  margin-top: auto;
+  background: #e60012;
+  color: #fff;
+  border: 0;
+  border-radius: 7px;
+  padding: 11px;
+  cursor: pointer;
+  font-weight: 600
+}
+.fi-main {
+  width: 100%;
+  max-width: 1050px;
+  padding: 28px 58px 42px
+}
+.fi-kicker {
+  font-size: 13px;
+  color: #a3a3aa;
+  margin-bottom: 26px
+}
+.fi-title {
+  font-size: 27px;
+  margin: 0 0 5px;
+  font-weight: 700
+}
+.fi-subtitle {
+  font-size: 13px;
+  color: var(--fi-muted);
+  margin: 0 0 23px
+}
+.fi-card {
+  background: #fff;
+  border: 1px solid var(--fi-border);
+  border-radius: 13px;
+  padding: 17px;
+  margin-bottom: 17px
+}
+.fi-profile-summary {
+  display: flex;
+  align-items: center;
+  gap: 18px
+}
+.fi-avatar {
+  width: 60px;
+  height: 60px;
+  font-size: 29px;
+  flex: none
+}
+.fi-name {
+  font-weight: 700;
+  font-size: 16px
+}
+.fi-role {
+  font-size: 13px;
+  color: var(--fi-muted);
+  margin-top: 6px
+}
+.fi-meta {
+  display: flex;
+  gap: 25px;
+  margin-top: 9px;
+  color: #555560;
+  font-size: 12px
+}
+.fi-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 20px;
+  align-items: start
+}
+.fi-field {
+  margin-bottom: 10px
+}
+.fi-field: last-child {
+  margin-bottom: 0
+}
+.fi-field label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px
+}
+.fi-field input {
+  width: 100%;
+  height: 34px;
+  padding: 7px 10px;
+  border: 1px solid #dedee4;
+  border-radius: 7px;
+  color: #555;
+  background: #fff;
+  font-size: 12px
+}
+.fi-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 13px
+}
+.fi-cv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #d7c7f4;
+  background: var(--fi-light);
+  border-radius: 9px;
+  padding: 10px 12px;
+  font-size: 12px
+}
+.fi-cv-icon {
+  font-size: 19px;
+  color: var(--fi-purple)
+}
+.fi-cv small {
+  display: block;
+  color: #83838d;
+  margin-top: 3px
+}
+.fi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px
+}
+.fi-tag {
+  border: 1px solid #c5a5ff;
+  border-radius: 99px;
+  background: #f7f1ff;
+  color: #6824dd;
+  padding: 4px 10px;
+  font-size: 11px
+}
+.fi-primary {
+  width: 100%;
+  height: 43px;
+  background: var(--fi-purple);
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer
+}
+.fi-tabs {
+  display: flex;
+  gap: 14px;
+  margin: 26px 0 22px
+}
+.fi-tab {
+  background: white;
+  border: 1px solid #d6d6dc;
+  border-radius: 7px;
+  padding: 9px 19px;
+  cursor: pointer;
+  font-size: 13px
+}
+.fi-tab.active {
+  background: var(--fi-purple);
+  border-color: var(--fi-purple);
+  color: #fff
+}
+.fi-application {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px 18px
+}
+.fi-app-title {
+  font-weight: 700;
+  font-size: 14px
+}
+.fi-app-meta {
+  color: #898a97;
+  font-size: 12px;
+  margin-top: 6px
+}
+.fi-status {
+  white-space: nowrap;
+  border: 1px solid #9bbaff;
+  border-radius: 99px;
+  background: #eff5ff;
+  color: #3170e7;
+  padding: 5px 10px;
+  font-size: 11px
+}
+.fi-status.purple {
+  border-color: #c5a2ff;
+  background: #f5efff;
+  color: #7232dc
+}
+.fi-status.green {
+  border-color: #91e6a4;
+  background: #edfff1;
+  color: #168e39
+}
+.fi-hidden {
+  display: none!important
+}
+.fi-editing input {
+  border-color: #a978ff;
+  background: #fff
+}
+.fi-toast {
+  position: fixed;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  background: #27242e;
+  color: #fff;
+  padding: 11px 18px;
+  display: none;
+  z-index: 5
+}
+@media(max-width: 850px) {
+  .fi-header {
+    height: auto;
+    min-height: 72px;
+    flex-wrap: wrap;
+    padding: 13px 20px;
+    gap: 14px
+  }
+  .fi-topnav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 0 6px
+  }
+  .fi-topnav a {
+    font-size: 12px
+  }
+  .fi-user {
+    margin-left: auto
+  }
+  .fi-layout {
+    grid-template-columns: 1fr
+  }
+  .fi-sidebar {
+    margin: 0;
+    padding: 10px;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 4px
+  }
+  .fi-side-link {
+    white-space: nowrap;
+    padding: 10px
+  }
+  .fi-logout {
+    margin: 0 0 0 auto;
+    white-space: nowrap;
+    padding: 9px 12px
+  }
+  .fi-main {
+    padding: 24px 20px
+  }
+  .fi-columns {
+    grid-template-columns: 1fr 1fr
+  }
+}
+@media(max-width: 560px) {
+  .fi-columns {
+    grid-template-columns: 1fr
+  }
+  .fi-title {
+    font-size: 23px
+  }
+  .fi-meta {
+    flex-direction: column;
+    gap: 6px
+  }
+  .fi-tabs {
+    gap: 7px;
+    overflow-x: auto
+  }
+  .fi-tab {
+    white-space: nowrap;
+    padding: 8px 13px
+  }
+  .fi-application {
+    padding: 14px 12px
+  }
+  .fi-status {
+    font-size: 10px;
+    padding: 5px 8px
+  }
+}
+
+
+
+:root {
     --violet: #693bff;
     --ink: #242334;
     --muted: #858397;
