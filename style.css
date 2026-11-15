@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root {
   --fi-purple: #7028ff;
   --fi-light: #eee5ff;
@@ -169,7 +168,7 @@ body {
 .fi-field {
   margin-bottom: 10px
 }
-.fi-field: last-child {
+.fi-field:last-child {
   margin-bottom: 0
 }
 .fi-field label {
@@ -1150,7 +1149,6 @@ body {
     }
 
 }
-=======
 :root{--p:#6b2bff;--p-soft:#ece3ff;--p-bg:#f1edfb;--ink:#1a1a2e;--mut:#6b6b80;--line:#d9cffa;--bg:#f7f7f8;--r:14px}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
@@ -1239,4 +1237,3 @@ main .sub{color:var(--mut);margin-bottom:24px}
 form.inl{display:inline;margin:0}
 .search .btn,.card .btn{font-size:inherit}
 .out-form button{width:100%}
->>>>>>> 7013bd4 ( acceuil+ dashboard)
