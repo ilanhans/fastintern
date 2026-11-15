@@ -168,7 +168,7 @@ body {
 .fi-field {
   margin-bottom: 10px
 }
-.fi-field: last-child {
+.fi-field:last-child {
   margin-bottom: 0
 }
 .fi-field label {
