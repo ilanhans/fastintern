@@ -1,64 +1,102 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - Fast Intern</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-    <!-- Barre de navigation supérieure -->
-    <header class="navbar">
-        <div class="logo">FAST <span>INTERN</span></div>
-        <nav class="nav-links">
-            <a href="#">Accueil</a>
-            <a href="#">Stages</a>
-            <a href="#">Alternances</a>
-            <a href="#">Jobs étudiants</a>
-        </nav>
-        <div class="nav-auth">
-            <a href="#" class="btn-outline active">Connexion</a>
-            <a href="#" class="btn-solid">Inscription</a>
-        </div>
-    </header>
+<div class="login-section">
 
-    <!-- Conteneur principal de la page de connexion -->
-    <main class="main-container">
-        <div class="auth-card">
-            <h1>Bienvenue sur Fast Intern</h1>
-            <p class="subtitle">Connectez-vous pour retrouver vos candidatures, vos offres sauvegardées et vos recommandations.</p>
-            
-            <form>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="votre.email@exemple.com" required>
-                </div>
-                
-                <div class="input-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" placeholder="Votre mot de passe" required>
-                </div>
+    <div class="login-card">
 
-                <div class="form-footer-row">
-                    <label class="checkbox-label">
-                        <input type="checkbox" required>
-                        J'accepte les conditions d'utilisation et la politique de confidentialité
-                    </label>
-                </div>
+        <h2>Bienvenue sur Fast Intern</h2>
 
-                <div class="forgot-container">
-                    <a href="#" class="forgot-password">Mot de passe oublié ?</a>
-                </div>
+        <p class="login-description">
+            Connectez-vous pour retrouver vos candidatures,
+            vos offres sauvegardées et vos recommandations.
+        </p>
 
-                <button type="submit" class="btn-primary">Se connecter</button>
-            </form>
+        <form action="index.php?mode=connexion" method="POST">
 
-            <div class="card-bottom-link">
-                Pas encore de compte ? <a href="#">Créer un compte</a>
+            <!-- Email -->
+            <div class="form-group mt-4">
+
+                <label for="email" class="form-label">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="votre.email@exemple.com"
+                    class="form-control"
+                    required
+                >
+
             </div>
-        </div>
-    </main>
 
-</body>
-</html>
+            <!-- Mot de passe -->
+            <div class="form-group mt-3">
+
+                <label for="password" class="form-label">
+                    Mot de passe
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Votre mot de passe"
+                    class="form-control"
+                    required
+                >
+
+            </div>
+
+            <!-- Conditions -->
+            <div class="form-check mt-3">
+
+                <input
+                    type="checkbox"
+                    id="conditions"
+                    name="conditions"
+                    class="form-check-input"
+                    required
+                >
+
+                <label for="conditions" class="form-check-label">
+                    J'accepte les conditions d'utilisation
+                    et la politique de confidentialité
+                </label>
+
+            </div>
+
+            <!-- Mot de passe oublié -->
+            <div class="forgot-password mt-2">
+
+                <a href="#">
+                    Mot de passe oublié ?
+                </a>
+
+            </div>
+
+            <!-- Bouton -->
+            <div class="text-center mt-3">
+
+                <button type="submit" name="login" class="btn btn-purple login-button">
+                    Se connecter
+                </button>
+
+            </div>
+
+            <!-- Inscription -->
+            <p class="login-footer mt-4">
+
+                Pas encore de compte ?
+
+                <a href="index.php?mode=inscription">
+                    Créer un compte
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
