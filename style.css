@@ -516,3 +516,252 @@ h1 {
         flex-direction: column;
     }
 }
+
+
+/* GENERAL */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #242333;
+}
+
+
+/* NAVIGATION */
+
+.fast-navbar {
+    padding: 20px 4%;
+    background-color: white;
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
+
+.logo-fast {
+    color: #702BFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-intern {
+    color: #111;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #111;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #702BFF;
+}
+
+
+/* BOUTONS */
+
+.btn-purple {
+    background-color: #702BFF;
+    color: white;
+    border: 1px solid #702BFF;
+    border-radius: 6px;
+}
+
+.btn-purple:hover {
+    background-color: #5B1FE0;
+    color: white;
+}
+
+.btn-outline-purple {
+    background-color: white;
+    color: #702BFF;
+    border: 1px solid #702BFF;
+    border-radius: 6px;
+}
+
+.btn-outline-purple:hover {
+    background-color: #702BFF;
+    color: white;
+}
+
+
+/* CONNEXION */
+
+.login-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 495px;
+    padding: 45px 60px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.login-card h2 {
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 6px;
+}
+
+.login-description {
+    text-align: center;
+    font-size: 10px;
+    color: #777f90;
+    margin-bottom: 45px;
+}
+
+.login-card .form-label {
+    font-size: 14px;
+}
+
+.login-card .form-control {
+    height: 33px;
+    font-size: 12px;
+    border: 1px solid #777;
+    border-radius: 6px;
+}
+
+.login-card .form-check-label {
+    font-size: 9px;
+    color: #777f90;
+}
+
+.login-card .form-check-input:checked {
+    background-color: #702BFF;
+    border-color: #702BFF;
+}
+
+.login-card .form-control:focus,
+.register-card .form-control:focus {
+    border-color: #702BFF;
+    box-shadow: 0 0 0 0.15rem rgba(112, 43, 255, 0.15);
+}
+
+.forgot-password {
+    margin-left: 10px;
+}
+
+.forgot-password a {
+    font-size: 10px;
+    color: #702BFF;
+    text-decoration: none;
+}
+
+.login-button {
+    width: 125px;
+    height: 37px;
+    border-radius: 12px;
+}
+
+.login-footer {
+    text-align: center;
+    font-size: 11px;
+    color: #777f90;
+}
+
+.login-footer a {
+    color: #702BFF;
+    text-decoration: none;
+}
+
+
+/* INSCRIPTION */
+
+.register-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px 15px 60px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 27px 28px;
+    border: 1px solid #777;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.register-card h2 {
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-bottom: 7px;
+}
+
+.register-description {
+    text-align: center;
+    font-size: 7.5px;
+    color: #777f90;
+    margin-bottom: 20px;
+}
+
+.register-card .form-label {
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.register-card .form-control {
+    height: 28px;
+    font-size: 9px;
+    border: 1px solid #777;
+    border-radius: 6px;
+}
+
+.register-button {
+    width: 100%;
+    height: 29px;
+    font-size: 13px;
+    padding: 3px;
+}
+
+.register-footer {
+    text-align: center;
+    font-size: 9px;
+    color: #777f90;
+    white-space: nowrap;
+}
+
+.register-footer a {
+    color: #702BFF;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .fast-navbar {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    .login-card {
+        padding: 35px 25px;
+    }
+
+    .register-card {
+        max-width: 300px;
+    }
+
+}
