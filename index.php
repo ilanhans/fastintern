@@ -49,10 +49,10 @@ if ($mode != 'connexion' && $mode != 'inscription') {
 
                 <div class="navbar-nav ms-auto flex-row align-items-center gap-3">
 
-                    <a class="nav-link" href="#">Accueil</a>
-                    <a class="nav-link" href="#">Stages</a>
-                    <a class="nav-link" href="#">Alternances</a>
-                    <a class="nav-link" href="#">Jobs étudiants</a>
+                    <a class="nav-link" href="acceuil.php">Accueil</a>
+                    <a class="nav-link" href="stages.php">Stages</a>
+                    <a class="nav-link" href="offres.php">Alternances</a>
+                    <a class="nav-link" href="jobs.php">Jobs étudiants</a>
 
                     <a class="btn btn-outline-purple"
                        href="index.php?mode=connexion">
