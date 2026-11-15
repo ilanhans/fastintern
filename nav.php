@@ -9,5 +9,5 @@ declare(strict_types=1);
         <a href="offres.php" class="<?= $pageActive === 'alternance' ? 'active' : '' ?>">Alternance</a>
         <a href="jobs.php" class="<?= $pageActive === 'jobs' ? 'active' : '' ?>">Jobs étudiants</a>
     </nav>
-    <a class="account" href="#profil"><span class="avatar" aria-hidden="true">♟</span><span>Stecy Maria</span></a>
+    <a class="account" href="profil.php"><span class="avatar" aria-hidden="true">♟</span><span>Stecy Maria</span></a>
 </header>
